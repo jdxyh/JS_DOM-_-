@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Array.join方法</title>
+	</head>
+	<body>
+		<font>
+			不改变原数组
+			join() 方法用于把数组中的所有元素放入一个字符串。元素是通过指定的分隔符进行分隔的。font>
+	</body>
+	<script type="text/javascript">
+		/**
+		 * 返回一个字符串。该字符串是通过把 arrayObject 的每个元素转换为字符串，然后把这些字符串连接起来，在两个元素之间插入 separator 字符串而生成的。
+		 */
+		var arr = new Array(3);
+		arr[0] = "java";
+		arr[1] = "javascript";
+		arr[2] = "python";
+		console.log(arr.join("!"));
+	</script>
+</html>

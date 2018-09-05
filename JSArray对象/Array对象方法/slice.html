@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Array.slice方法</title>
+	</head>
+	<body>
+		<font>
+			不改变原数组
+			slice() 方法可从已有的数组中返回选定的元素。
+		</font>
+		<script type="text/javascript">
+			/**
+			 * 语法：
+			 * arrayObject.slice(start,end)
+			 * start:必须选，可以位负数，
+			 * -1表示从第倒数第一位开始
+			 * -2表示从倒数第二位开始
+			 */
+			var arr = new Array("javascript","python","java","C");
+			console.log(arr.slice(-1));
+			console.log(arr.slice(-2))
+			console.log(arr.slice(0));
+			console.log(arr.slice(1,-1));
+		</script>
+	</body>
+</html>

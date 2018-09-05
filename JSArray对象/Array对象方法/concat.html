@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Array.concat方法</title>
+	</head>
+	<body>
+		<font>
+			不改变原数组
+			concat() 方法用于连接两个或多个数组。该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本
+		</font>
+		<script type="text/javascript">
+			/**
+			 * 语法：
+			 * arrayObject.concat(array1,array2,...arrayx);
+			 * 返回值；
+			 * 返回一个新的数组，该数组通过吧所有的arrayx参数添加到arrayObject中生成，如果
+			 * 进行concat()操作的是数组，那么添加进入的是数组的元素，而不是数组。
+			 */
+			var array = [1,2,3];
+			console.log(array.concat(4,5));
+			
+			var arr1 = new Array("java","javascript");
+			var arr2 = new Array("c","python");
+			var arr3 = new Array("Math")
+			console.log(arr1.concat(arr2,arr3));
+		</script>
+	</body>
+</html>
