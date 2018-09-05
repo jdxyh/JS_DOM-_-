@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>constructor属性，返回对创建此对象的数组函数的引用</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/**
+			 * 例子1
+			 * 
+			 * 语法：object.constructor
+			 */
+			var test = new Array();
+			console.log(test.constructor == Array ? "yes" : "no");
+			console.log(test.constructor == Boolean ? "yes" : "no");
+			console.log(test.constructor == String ? "yes" : "no");
+			/**
+			 * 例子2
+			 */
+			function people(name,job,born){
+				this.name = name;
+				this.job = job;
+				this.born = born;
+			}
+			var jdxyh = new people("zxg","engineer",1994);
+			//返回创建jdxyh对象的函数的引用
+			console.log(jdxyh.constructor);
+		</script>
+	</body>
+</html>

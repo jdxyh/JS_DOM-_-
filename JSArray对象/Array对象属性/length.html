@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>length属性，可设置或返回数组中元素的数目</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/**
+			 * 语法：
+			 * arrayObject.length
+			 */
+			var arr = new Array(3);
+			arr[0] = "javascript";
+			arr[1] = "java";
+			arr[2] = "c";
+			document.write("Original length:" + arr.length);
+			document.write("<br />");
+			arr.length = 5;
+			document.write("New length:" + arr.length);
+		</script>
+	</body>
+</html>

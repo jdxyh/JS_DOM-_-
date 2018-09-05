@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>prototype属性，使您有能力向对象添加属性和方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/**
+			 * 语法：
+			 * object.prototype.name = value
+			 * 
+			 * 例子1： 使用prototype属性，向对象中添加属性
+			 */
+			function people(name,job,born){
+				this.name = name;
+				this.job = job;
+				this.born = born;
+			}
+			var jdxyh = new people("zxg","engineer","1994");
+			people.prototype.sex = null;
+			jdxyh.sex = "boy";
+			console.log(jdxyh.sex);
+		</script>
+	</body>
+</html>
